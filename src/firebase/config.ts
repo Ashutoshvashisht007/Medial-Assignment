@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBvCGDzltAYs0yHFGWaEQRTchIb1NQC8ms",
-  authDomain: "medial-assignment-de0ce.firebaseapp.com",
-  projectId: "medial-assignment-de0ce",
-  storageBucket: "medial-assignment-de0ce.appspot.com",
-  messagingSenderId: "894505278566",
-  appId: "1:894505278566:web:f10adc215da0396824a1a7",
-  measurementId: "G-GBWM0TEVX8"
+  apiKey: import.meta.env.API_KEY,
+  authDomain: import.meta.env.AUTH_DOMAIN,
+  projectId: import.meta.env.PROJECT_ID,
+  storageBucket: import.meta.env.STORAGE,
+  messagingSenderId: import.meta.env.MESSAGE_SENDER,
+  appId: import.meta.env.APP_ID,
+  measurementId: import.meta.env.MEASUREMENT
 };
 
 const app = initializeApp(firebaseConfig);
